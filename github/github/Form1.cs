@@ -15,6 +15,9 @@ namespace github
         public Form1()
         {
             InitializeComponent();
+            
+            
+            leo é gay
         }
     }
 }
