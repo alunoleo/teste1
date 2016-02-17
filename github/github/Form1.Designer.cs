@@ -34,12 +34,18 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(148, 81);
+            this.button1.Location = new System.Drawing.Point(138, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -65,11 +71,29 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 2;
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(322, 10);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(53, 103);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 286);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
@@ -77,6 +101,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +115,10 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

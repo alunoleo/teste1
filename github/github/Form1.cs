@@ -19,7 +19,7 @@ namespace github
 
         private void Form1_Load(object sender, EventArgs e)
         {
-aemkgmsnºpinzvdkmpsdvmºpvsmksmvmopvdmsdop
+
         }
 
         private void button1_Click(object sender, EventArgs e)
