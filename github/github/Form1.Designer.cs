@@ -30,95 +30,88 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button2 = new System.Windows.Forms.Button();
+            this.imgCamUser_2 = new Emgu.CV.UI.ImageBox();
+            this.buttonEscolher_foto = new System.Windows.Forms.Button();
+            this.imageBox1 = new Emgu.CV.UI.ImageBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCamUser_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(138, 50);
+            this.button1.Location = new System.Drawing.Point(98, 283);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Rechonecimento facial";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // button2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(322, 158);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(670, 283);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(155, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Tirar Foto?";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // imgCamUser_2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(322, 131);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
+            this.imgCamUser_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imgCamUser_2.Location = new System.Drawing.Point(548, 12);
+            this.imgCamUser_2.Name = "imgCamUser_2";
+            this.imgCamUser_2.Size = new System.Drawing.Size(349, 265);
+            this.imgCamUser_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCamUser_2.TabIndex = 5;
+            this.imgCamUser_2.TabStop = false;
             // 
-            // checkedListBox1
+            // buttonEscolher_foto
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(322, 10);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox1.TabIndex = 3;
+            this.buttonEscolher_foto.Location = new System.Drawing.Point(357, 282);
+            this.buttonEscolher_foto.Name = "buttonEscolher_foto";
+            this.buttonEscolher_foto.Size = new System.Drawing.Size(185, 23);
+            this.buttonEscolher_foto.TabIndex = 7;
+            this.buttonEscolher_foto.Text = "Selecionar foto para reconhecer";
+            this.buttonEscolher_foto.UseVisualStyleBackColor = true;
+            this.buttonEscolher_foto.Click += new System.EventHandler(this.buttonLer_fotos_Click);
             // 
-            // dataGridView1
+            // imageBox1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 103);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 4;
+            this.imageBox1.Location = new System.Drawing.Point(12, 12);
+            this.imageBox1.Name = "imageBox1";
+            this.imageBox1.Size = new System.Drawing.Size(339, 265);
+            this.imageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageBox1.TabIndex = 2;
+            this.imageBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 286);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(909, 356);
+            this.Controls.Add(this.imageBox1);
+            this.Controls.Add(this.buttonEscolher_foto);
+            this.Controls.Add(this.imgCamUser_2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCamUser_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.BindingSource bindingSource2;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
+        private Emgu.CV.UI.ImageBox imgCamUser_2;
+        private System.Windows.Forms.Button buttonEscolher_foto;
+        private Emgu.CV.UI.ImageBox imageBox1;
     }
 }
 
